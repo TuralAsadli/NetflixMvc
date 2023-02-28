@@ -1,0 +1,62 @@
+﻿@using BusinesLogic.ViewModel.Category
+@using BusinesLogic.ViewModel.Subscribe
+@using BusinesLogic.ViewModel.Subtitle
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model SubscribeVM
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Subscribe</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="SubscribeName">Subscribe</label>
+                                        <input asp-for="SubscribeName" id="first-name-column" class="form-control" placeholder="Subscribe">
+                                        <span asp-validation-for="SubscribeName"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="Price">Price</label>
+                                        <input asp-for="Price"  class="form-control" placeholder="Price">
+                                        <span asp-validation-for="Price"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="Duration">Duration(days)</label>
+                                        <input asp-for="Duration" class="form-control" placeholder="Duration">
+                                        <span asp-validation-for="Duration"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="MaxUser">Max User</label>
+                                        <input asp-for="MaxUser" class="form-control" placeholder="Max User">
+                                        <span asp-validation-for="MaxUser"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button asp-action="Index" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

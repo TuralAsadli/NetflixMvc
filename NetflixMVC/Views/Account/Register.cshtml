@@ -1,0 +1,82 @@
+﻿@using BusinesLogic.ViewModel.Subscribe
+@using DAL.Entities.User
+@model UserRegisterVM
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_AccountLayout";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center">
+                <form id="pms_register-form" class="pms-form" method="POST">
+                    <h4>Register</h4>
+                    <input type="hidden" id="pmstkn" name="pmstkn" value="59b502f483"><input type="hidden"
+                                                                                             name="_wp_http_referer" value="/register/">
+                    <ul class="pms-form-fields-wrapper pl-0">
+                        <li class="pms-field pms-user-login-field ">
+                            <label asp-for="UserName">Username *</label>
+                            <input asp-for="UserName">
+                            <span asp-validation-for="UserName"></span>
+                        </li>
+                        <li class="pms-field pms-user-email-field ">
+                            <label asp-for="Email">E-mail *</label>
+                            <input asp-for="Email">
+                            <span asp-validation-for="Email"></span>
+                        </li>
+                        <li class="pms-field pms-first-name-field ">
+                            <label asp-for="FirstName">First Name</label>
+                            <input asp-for="FirstName">
+                            <span asp-validation-for="FirstName"></span>
+                        </li>
+                        <li class="pms-field pms-last-name-field ">
+                            <label asp-for="LastName">Last Name</label>
+                            <input asp-for="LastName">
+                            <span asp-validation-for="LastName"></span>
+                        </li>
+                        <li class="pms-field pms-pass1-field">
+                            <label asp-for="Password">Password *</label>
+                            <input asp-for="Password">
+                            <span asp-validation-for="Password"></span>
+                        </li>
+                        <li class="pms-field pms-pass2-field">
+                            <label asp-for="RepitPassword">Repeat Password *</label>
+                            <input asp-for="RepitPassword">
+                            <span asp-validation-for="RepitPassword"></span>
+                        </li>
+                        <li class="pms-field pms-pass2-field">
+                            <div asp-validation-summary="ModelOnly"></div>
+                        </li>
+                        <li class="pms-field pms-field-subscriptions ">
+                            @foreach (SubscribeWithIdVM item in ViewBag.Subs)
+                            {
+                                <div class="pms-subscription-plan">
+                                    <label>
+                                        <input type="radio"
+                                           asp-for="SubscribeId" data-price="199" data-duration="1"
+                                           value="@item.Id" checked="checked" data-default-selected="true"><span class="pms-subscription-plan-name">@item.SubscribeName</span><span class="pms-subscription-plan-price">
+                                            <span class="pms-divider">
+                                                -
+                                            </span><span class="pms-subscription-plan-price-value">@item.Price</span><span class="pms-subscription-plan-currency">$</span><span class="pms-divider"> / </span>@(item.Duration/30) Month
+                                        </span><span class="pms-subscription-plan-trial"></span><span class="pms-subscription-plan-sign-up-fee"></span>
+                                    </label>
+                                </div>
+                            }
+                            <div id="pms-paygates-wrapper">
+                                <input type="hidden" class="pms_pay_gate"
+                                       name="pay_gate" value="paypal_standard">
+                            </div>
+                        </li>
+                    </ul>
+                    <span id="pms-submit-button-loading-placeholder-text" class="d-none">
+                        Processing. Please
+                        wait...
+                    </span>
+                    <input name="pms_register" type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

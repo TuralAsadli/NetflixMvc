@@ -1,0 +1,46 @@
+﻿@using BusinesLogic.ViewModel;
+@using BusinesLogic.ViewModel.Actor;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ActorVM
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Actors Column</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="ActorName">First Name</label>
+                                        <input asp-for="ActorName" id="first-name-column" class="form-control" placeholder="First Name">
+                                        <span asp-validation-for="ActorName"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="ActorSurname">Last Name</label>
+                                        <input asp-for="ActorSurname" id="last-name-column" class="form-control" placeholder="Last Name">
+                                        <span asp-validation-for="ActorSurname"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button type="reset" asp-action="Index" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

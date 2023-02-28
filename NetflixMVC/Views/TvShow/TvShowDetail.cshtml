@@ -1,0 +1,1065 @@
+﻿@using DAL.TvShows
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    
+}
+
+@model TvShow
+
+
+    <!--=========== Loader =============-->
+    
+    <!--========== Header ==============-->
+    <!-- Single-tv-Shows -->
+    <section class="position-relative gen-section-padding-3">
+        <div class="tv-single-background">
+            <img src="~/images/background/asset-15.jpeg" alt="stream-lab-image">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gen-tv-show-wrapper style-1">
+                        <div class="gen-tv-show-top">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="gentech-tv-show-img-holder">
+                                        <img src="~/images/hoverImg/@Model.HoverImgName" alt="stream-lab-image">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 align-self-center">
+                                    <div class="gen-single-tv-show-info">
+                                        <h2 class="gen-title">@Model.TvShowName</h2>
+                                        <div class="gen-single-meta-holder">
+                                            <ul>
+                                                <li>@Model.Seasons.Count Seasons</li>
+                                                <li>@Model.Seasons.Select(s => s.Series.Count).Sum() Episodes</li>
+                                                <li>@Model.ReliseTime</li>
+                                                <li>
+                                                    @foreach (var item in Model.Categories)
+                                                    {
+                                                        <a asp-action="Index" asp-controller="Category" asp-route-id="@item.Id"><span>@item.CategoryName,</span></a>
+                                                    }
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-eye">
+                                                    </i>
+                                                    <span>@Model.Seasons.Select(s => s.Series.Select(v => v.Views).Sum()).Sum() Views</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p>
+                                            @Model.Desc
+                                        </p>
+                                        <div class="gen-socail-share mt-0">
+                                            <h4 class="align-self-center">Social Share :</h4>
+                                            <ul class="social-inner">
+                                                <li>
+                                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="facebook"><i class="fab fa-instagram"></i></a>
+                                                </li>
+                                                <li><a href="#" class="facebook"><i class="fab fa-twitter"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gen-season-holder">
+                            <ul class="nav">
+                                @for (int i = 0; i < Model.Seasons.Count; i++)
+                                {
+                                    if (i == 0)
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link active show" data-toggle="tab" href="#season_@(i)">Season @(i+1)</a>
+                                        </li>
+                                    }
+                                    else{
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#season_@i">Season @(i+1)</a>
+                                        </li>
+                                    }        
+                                }
+                            </ul>
+                            <div class="tab-content">
+                                @for (int i = 0; i < Model.Seasons.Count; i++)
+                                {
+                                    if (i == 0)
+                                    {
+                                        <div id="season_@i" class="tab-pane active">
+                                        <div class="row post-loadmore-wrapper">
+                                            @for (var j = 0; j < Model.Seasons.ElementAt(i).Series.Count; j++)
+                                            {
+                                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                                        <div class="gen-movie-contain">
+                                                            <div class="gen-movie-img">
+                                                                <img src="~/images/hoverImg/@Model.Seasons.ElementAt(i).Series.ElementAt(j).HoverImgName" alt="streamlab-image">
+                                                                <div class="gen-movie-add">
+                                                                    <div class="wpulike wpulike-heart">
+                                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                                            <button type="button"
+                                                                        class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <ul class="menu bottomRight">
+                                                                        <li class="share top">
+                                                                            <i class="fa fa-share-alt"></i>
+                                                                            <ul class="submenu">
+                                                                                <li>
+                                                                                    <a href="#" class="facebook">
+                                                                                        <i class="fab fa-facebook-f"></i>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="#" class="facebook">
+                                                                                        <i class="fab fa-instagram"></i>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="#" class="facebook">
+                                                                                        <i class="fab fa-twitter"></i>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                            <i class="fa fa-plus"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                                            <div class="mCustomScrollBox">
+                                                                                <div class="mCSB_container">
+                                                                                    <a class="login-link" href="#">
+                                                                                        Sign in to add this
+                                                                                        movie to a
+                                                                                        playlist.
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gen-movie-action">
+                                                                    <a asp-action="SeasonDetail" asp-controller="TvShow" asp-route-id="@Model.Id" asp-route-seasonId="@Model.Seasons.ElementAt(i).Id" asp-route-seriaId="@Model.Seasons.ElementAt(i).Series.ElementAt(j).Id" class="gen-button">
+                                                                        <i class="fa fa-play"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gen-info-contain">
+                                                                <div class="gen-movie-info">
+                                                                    <h3><a asp-action="SeasonDetail" asp-controller="TvShow" asp-route-id="@Model.Id" asp-route-seasonId="@Model.Seasons.ElementAt(i).Id" asp-route-seriaId="@Model.Seasons.ElementAt(i).Series.ElementAt(j).Id">Seria @(j + 1)</a></h3>
+                                                                </div>
+                                                                <div class="gen-movie-meta-holder">
+                                                                    <ul>
+                                                                        <li>@(i+1) Season</li>
+                                                                        <li>
+                                                                            @Model.Seasons.ElementAt(i).ReliseTime.ToString("dd-MM-yyyy")
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+
+
+                                        </div>
+                                    </div>
+                                    }
+                                    else
+                                    {
+                                        <div id="season_@i" class="tab-pane">
+                                            <div class="row post-loadmore-wrapper">
+                                                @for (var j = 0; j < Model.Seasons.ElementAt(i).Series.Count; j++)
+                                                {
+                                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                                        <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                                            <div class="gen-movie-contain">
+                                                                <div class="gen-movie-img">
+                                                                    <img src="~/images/hoverImg/@Model.Seasons.ElementAt(i).Series.ElementAt(j).HoverImgName" alt="streamlab-image">
+                                                                    <div class="gen-movie-add">
+                                                                        <div class="wpulike wpulike-heart">
+                                                                            <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                                                <button type="button"
+                                                                            class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <ul class="menu bottomRight">
+                                                                            <li class="share top">
+                                                                                <i class="fa fa-share-alt"></i>
+                                                                                <ul class="submenu">
+                                                                                    <li>
+                                                                                        <a href="#" class="facebook">
+                                                                                            <i class="fab fa-facebook-f"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" class="facebook">
+                                                                                            <i class="fab fa-instagram"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" class="facebook">
+                                                                                            <i class="fab fa-twitter"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="movie-actions--link_add-to-playlist dropdown">
+                                                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                                                <i class="fa fa-plus"></i>
+                                                                            </a>
+                                                                            <div class="dropdown-menu mCustomScrollbar">
+                                                                                <div class="mCustomScrollBox">
+                                                                                    <div class="mCSB_container">
+                                                                                        <a class="login-link" href="#">
+                                                                                            Sign in to add this
+                                                                                            movie to a
+                                                                                            playlist.
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="gen-movie-action">
+                                                                    <a asp-action="SeasonDetail" asp-controller="TvShow" asp-route-id="@Model.Id" asp-route-seasonId="@Model.Seasons.ElementAt(i).Id" asp-route-seriaId="@Model.Seasons.ElementAt(i).Series.ElementAt(j).Id" class="gen-button">
+                                                                            <i class="fa fa-play"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gen-info-contain">
+                                                                    <div class="gen-movie-info">
+                                                                        <h3><a asp-action="SeasonDetail" asp-controller="TvShow" asp-route-id="@Model.Id" asp-route-seasonId="@Model.Seasons.ElementAt(i).Id" asp-route-seriaId="@Model.Seasons.ElementAt(i).Series.ElementAt(j).Id">Seria @(j + 1)</a></h3>
+                                                                    </div>
+                                                                    <div class="gen-movie-meta-holder">
+                                                                        <ul>
+                                                                            <li>@(i+1) Season</li>
+                                                                            <li>
+                                                                                @Model.Seasons.ElementAt(i).ReliseTime.ToString("dd-MM-yyyy")
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+
+
+                                            </div>
+                                        </div>
+                                    }
+                                    
+                                }
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pm-inner">
+                        <div class="gen-more-like">
+                            <h5 class="gen-more-title">More Like This</h5>
+                            <div class="row post-loadmore-wrapper">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-14.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Ghost of Sky</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>1 Season</li>
+                                                        <li>
+                                                            <a href="adventure.html"><span>Adventure</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-15.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Love In 21st</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>2 Seasons</li>
+                                                        <li>
+                                                            <a href="action.html"><span>Action</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-16.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Family Love</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>0 Seasons</li>
+                                                        <li>
+                                                            <a href="action.html"><span>Action</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-17.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Dance nation Dance</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>0 Seasons</li>
+                                                        <li>
+                                                            <a href="comedy.html"><span>Comedy</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-18.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Vacation Life</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>1 Season</li>
+                                                        <li>
+                                                            <a href="adventure.html"><span>Adventure</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-19.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Dream Of Dargons</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>1 Season</li>
+                                                        <li>
+                                                            <a href="drama.html"><span>Drama</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-20.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Command In Your Hand</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>1 Season</li>
+                                                        <li>
+                                                            <a href="comedy.html"><span>Comedy</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-21.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Stories Of the Dark</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>1 Season</li>
+                                                        <li>
+                                                            <a href="biography.html"><span>Biography</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-13.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">Friend Of Jin</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>1 Season</li>
+                                                        <li>
+                                                            <a href="drama.html"><span>Drama</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="gen-carousel-movies-style-1 movie-grid style-1">
+                                        <div class="gen-movie-contain">
+                                            <div class="gen-movie-img">
+                                                <img src="~/images/background/asset-22.jpeg" alt="streamlab-image">
+                                                <div class="gen-movie-add">
+                                                    <div class="wpulike wpulike-heart">
+                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                            <button type="button"
+                                                                    class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="menu bottomRight">
+                                                        <li class="share top">
+                                                            <i class="fa fa-share-alt"></i>
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-facebook-f"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="facebook">
+                                                                        <i class="fab fa-twitter"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                            <div class="mCustomScrollBox">
+                                                                <div class="mCSB_container">
+                                                                    <a class="login-link" href="#">
+                                                                        Sign in to add this
+                                                                        movie to a
+                                                                        playlist.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gen-movie-action">
+                                                    <a href="tv-shows-home.html" class="gen-button">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="gen-info-contain">
+                                                <div class="gen-movie-info">
+                                                    <h3><a href="tv-shows-home.html">3 Hacker:TBG</a></h3>
+                                                </div>
+                                                <div class="gen-movie-meta-holder">
+                                                    <ul>
+                                                        <li>1 Season</li>
+                                                        <li>
+                                                            <a href="drama.html"><span>Drama</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="gen-movie-action">
+                        <div class="gen-btn-container">
+                            <a href="#" class="gen-button">
+                                <span class="text">Load More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Single-tv-Shows -->
+    <!-- footer start -->
+    
+<script>
+var tab; // заголовок вкладки
+var tabContent; // блок содержащий контент вкладки
+
+
+window.onload=function() {
+    tabContent=document.getElementsByClassName('.tab-pane .item');
+    tab=document.getElementsByClassName('nav');
+    hideTabsContent(1);
+}
+
+document.getElementsByClassName('gen-season-holder').onclick= function (event) {
+    var target=event.target;
+    if (target.className=='nav') {
+       for (var i=0; i<tab.length; i++) {
+           if (target == tab[i]) {
+               showTabsContent(i);
+               break;
+           }
+       }
+    }
+}
+
+function hideTabsContent(a) {
+    for (var i=a; i<tabContent.length; i++) {
+        tabContent[i].classList.remove('show');
+        tabContent[i].classList.add("hide");
+        // tab[i].classList.remove('whiteborder');
+    }
+}
+
+function showTabsContent(b){
+    if (tabContent[b].classList.contains('hide')) {
+        hideTabsContent(0);
+        // tab[b].classList.add('whiteborder');
+        tabContent[b].classList.remove('hide');
+        tabContent[b].classList.add('show');
+    }
+}</script>
+
+
+

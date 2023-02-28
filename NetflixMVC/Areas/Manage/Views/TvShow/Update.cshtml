@@ -1,0 +1,117 @@
+﻿@using BusinesLogic.ViewModel.Movie
+@using BusinesLogic.ViewModel.TvShow
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model TvShowVM
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="TvShowName">Movie Name</label>
+                                        <input asp-for="TvShowName" id="first-name-column" class="form-control"
+                                               placeholder="Name">
+                                        <span asp-validation-for="TvShowName"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="Desc">Description</label>
+                                        <input asp-for="Desc" id="last-name-column" class="form-control"
+                                               placeholder="Description">
+                                        <span asp-validation-for="Desc"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="ReliseTime">Relise date</label>
+                                        <input asp-for="ReliseTime" id="last-name-column" class="form-control"
+                                               placeholder="Relise date">
+                                        <span asp-validation-for="ReliseTime"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-group">
+                                        <label asp-for="ActorsIds">Actors</label>
+                                        <select class="choices form-select multiple-remove" multiple="multiple" asp-for="ActorsIds" asp-items="ViewBag.Actors"></select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-group">
+                                        <label asp-for="CategoriesIds">Categories</label>
+                                        <select class="choices form-select multiple-remove" multiple="multiple" asp-for="CategoriesIds" asp-items="ViewBag.Categories"></select>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-group">
+                                        <label asp-for="LanguagesIds">Movie Language</label>
+                                        <select class="choices form-select multiple-remove" multiple="multiple" asp-for="LanguagesIds" asp-items="ViewBag.Language"></select>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-group">
+                                        <label asp-for="SubtitleIds">Subtitles</label>
+                                        <select class="choices form-select multiple-remove" multiple="multiple" asp-for="SubtitleIds" asp-items="ViewBag.Subtitles"></select>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-group">
+                                        <label asp-for="AudioLanguagesIds">AudioLanguage</label>
+                                        <select class="choices form-select multiple-remove" multiple="multiple" asp-for="AudioLanguagesIds" asp-items="ViewBag.AudioLanguages"></select>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-lg-6 col-md-12">
+                                        <label asp-for="ImgFile" class="form-label">Image</label>
+                                        <input class="form-control" asp-for="ImgFile" id="formFile">
+                                        <span asp-validation-for="ImgFile"></span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button asp-action="Index" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+

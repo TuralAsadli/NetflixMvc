@@ -1,0 +1,90 @@
+﻿@using BusinesLogic.ViewModel.Settings
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<SettingVM>
+<!-- breadcrumb -->
+<div class="gen-breadcrumb" style="background-image: url('images/background/asset-25.jpeg');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <div class="gen-breadcrumb-title">
+                        <h1>
+                            contact us
+                        </h1>
+                    </div>
+                    <div class="gen-breadcrumb-container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a asp-action="Index" asp-controller="Home">
+                                    <i class="fas fa-home mr-2"></i>Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active">contact us</li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb -->
+<!-- Icon-Box Start -->
+<section class="gen-section-padding-3">
+    <div class="container container-2">
+        <div class="row">
+            <div class="col-xl-4 col-md-6">
+                <div class="gen-icon-box-style-1">
+                    <div class="gen-icon-box-icon">
+                        <span class="gen-icon-animation">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </div>
+                    <div class="gen-icon-box-content">
+                        <h3 class="pt-icon-box-title mb-2">
+                            <span>Our Location</span>
+                        </h3>
+                        <p class="gen-icon-box-description">
+                            @Model.FirstOrDefault(x => x.Key == "Location").Value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mt-4 mt-md-0">
+                <div class="gen-icon-box-style-1">
+                    <div class="gen-icon-box-icon">
+                        <span class="gen-icon-animation">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                    </div>
+                    <div class="gen-icon-box-content">
+                        <h3 class="pt-icon-box-title mb-2">
+                            <span>call us at</span>
+                        </h3>
+                        <p class="gen-icon-box-description">@Model.FirstOrDefault(x => x.Key == "First Number").Value<br>@Model.FirstOrDefault(x => x.Key == "Second Number").Value</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-12 mt-4 mt-xl-0">
+                <div class="gen-icon-box-style-1">
+                    <div class="gen-icon-box-icon">
+                        <span class="gen-icon-animation">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                    </div>
+                    <div class="gen-icon-box-content">
+                        <h3 class="pt-icon-box-title mb-2">
+                            <span>Mail us</span>
+                        </h3>
+                        <p class="gen-icon-box-description">@Model.FirstOrDefault(x => x.Key == "Email").Value</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Icon-Box End -->
+<!-- Map Start -->

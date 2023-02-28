@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using BusinesLogic.ViewModel.Movie
+@{
+    
+}
+@model IEnumerable<MovieWithIdVM>
+
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            Tv Shows
+        </div>
+        <div class="card-header">
+            <a asp-action="Create" class="btn btn-primary">Create</a>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped" id="table1">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Duration</th>
+                        <th>Relise Date</th>
+                        <th>Rating</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MovieName</td>
+                            <td>@item.Duration min</td>
+                            <td>@item.ReliseDate.ToString("dd-MM-yyyy");</td>
+                            <td>@item.Rating</td>
+                            <td><a asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+                            <td><a asp-action="Update" asp-route-id="@item.Id" class="btn btn-warning">Update</a></td>
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>

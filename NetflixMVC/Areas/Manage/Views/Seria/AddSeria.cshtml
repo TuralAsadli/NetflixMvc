@@ -1,0 +1,67 @@
+﻿@using BusinesLogic.ViewModel.Movie
+@using BusinesLogic.ViewModel.TvShow.Season
+@using BusinesLogic.ViewModel.TvShow.Seria
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model SeriaVM
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="SeriesName">Seria Name</label>
+                                        <input asp-for="SeriesName" id="first-name-column" class="form-control"
+                                               placeholder="Name">
+                                        <span asp-validation-for="SeriesName"></span>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label asp-for="HoverImgFile">Hover img</label>
+                                        <input asp-for="HoverImgFile" id="last-name-column" class="form-control"
+                                               placeholder="Relise date">
+                                        <span asp-validation-for="HoverImgFile"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-lg-6 col-md-12">
+                                        <label asp-for="VideoFile" class="form-label">Video</label>
+                                        <input class="form-control" asp-for="VideoFile" id="formFile">
+                                        <span asp-validation-for="VideoFile"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button asp-action="Index" asp-controller="TvShow" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using BusinesLogic.ViewModel.TvShow.Season
+@{
+
+}
+@model IEnumerable<SeasonWithIdVM>
+
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            Simple Datatable
+        </div>
+        <div class="card-header">
+            <a asp-action="Create" class="btn btn-primary">Create</a>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped" id="table1">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Relise Date</th>
+                        <th>Rating</th>
+                        <th>Delete</th>
+                        <th>Show Series</th>
+                        <th>Add Seria</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.SeasonName</td>
+                            <td>@item.ReliseTime.ToString("dd.MM.yyyyy");</td>
+                            <td>@item.Rating</td>
+                            <td><a asp-action="DeleteSeason" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+                            <td><a asp-action="ShowSeries" asp-controller="Seria" asp-route-id="@item.Id" class="btn btn-warning">Show Series</a></td>
+                            <td><a asp-action="AddSeria" asp-controller="Seria" asp-route-id="@item.Id" class="btn btn-warning">Add Seria</a></td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>

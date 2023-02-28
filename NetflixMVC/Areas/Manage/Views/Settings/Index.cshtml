@@ -1,0 +1,53 @@
+﻿@using BusinesLogic.ViewModel.Settings
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<SettingVM>
+<section class="section">
+    <div class="row" id="table-hover-row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Settings</h4>
+                </div>
+                <div class="card-header">
+                    <a asp-action="Create" class="btn btn-primary">Create</a>
+                </div>
+                <div class="card-content">
+
+                    <!-- table hover -->
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Key</th>
+                                    <th>Value</th>
+                                    <th>Delete</th>
+                                    <th>Update</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="text-bold-500">@item.Id</td>
+                                        <td>@item.Key</td>
+                                        <td>@item.Value</td>
+                                        <td><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+                                        <td><a asp-action="Update" asp-route-id="@item.Id" class="btn btn-warning">Update</a></td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
