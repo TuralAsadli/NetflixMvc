@@ -9,6 +9,7 @@ using DAL.Entities.User;
 using Microsoft.AspNetCore.Identity;
 
 using DAL.Utilites;
+using NetflixMVC.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDataLayerExtention(builder.Configuration);
 builder.Services.AddServiceLayerExtention();
-
+builder.Services.AddHttpContextAccessor();
 
 
 //builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -45,7 +46,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

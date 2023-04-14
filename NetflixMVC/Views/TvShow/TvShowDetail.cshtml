@@ -35,7 +35,7 @@
                                             <ul>
                                                 <li>@Model.Seasons.Count Seasons</li>
                                                 <li>@Model.Seasons.Select(s => s.Series.Count).Sum() Episodes</li>
-                                                <li>@Model.ReliseTime</li>
+                                                <li>@Model.ReliseTime.ToString("dd-MM-yyyy")</li>
                                                 <li>
                                                     @foreach (var item in Model.Categories)
                                                     {

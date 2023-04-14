@@ -33,7 +33,7 @@ namespace NetflixMVC.Controllers
 
         public IActionResult MovieDetail(int id)
         {
-            if (User.Identity.IsAuthenticated != null)
+            if (User.Identity.IsAuthenticated != false)
             {
                 var users = _users.GetWithInclude("WachedMovies");
                 
@@ -67,6 +67,10 @@ namespace NetflixMVC.Controllers
                 return BadRequest();
             }
             recomendationVM.Movie = res;
+            if (!User.Identity.IsAuthenticated || _users.GetAll().FirstOrDefault(x => x.UserName == User.Identity.Name).Subscribe == null)
+            {
+                recomendationVM.Movie.MovieVideoName = null;
+            }
             List<Movie> categories = new List<Movie>();
             recomendationVM.Movies = movies.Where(x => x.MovieCategories.Select(c => c.CategoryId) == res.MovieCategories.Select(r => r.CategoryId));
 

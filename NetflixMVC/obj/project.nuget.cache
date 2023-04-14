@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6ng2bErjgrfvlXogaqHQbCA3JO9+dTruQn0aYQVOhbY+km+jZK2gLaBZv7C822y6Hg/ViizMR7NxyMaIYewiRQ==",
+  "dgSpecHash": "iLUeqNEwbyYeFGuqTkLoW71y/bRz8s9jCPdCeyve+B1ggrLH4Sl5Z7PGukbLg8cc3+jZIOZ8+SikAsRMWd121A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\NetflixMVC\\NetflixMVC.csproj",
+  "projectFilePath": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tural\\.nuget\\packages\\alachisoft.ncache.opensource.sdk\\5.0.5\\alachisoft.ncache.opensource.sdk.5.0.5.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
@@ -90,7 +90,7 @@
     "C:\\Users\\Tural\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\neon.sshnet\\1.0.0\\neon.sshnet.1.0.0.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\Tural\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Tural\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\nreco.videoinfo\\1.2.0\\nreco.videoinfo.1.2.0.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",

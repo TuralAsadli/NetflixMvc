@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5uU+NikWLIjUwOgcqSf8X7tGCnOjTJggkezYR5nuT3tskkHbfIUtJ8EqiKdCH1CzMJSfTtFsenJ0AKvpKRkY+A==",
+  "dgSpecHash": "ZuqIAgNv9+CkbUrWZe6SMK5XG9YnYLnctVumKfEH3EBqm4w0FBsq0a3t9U7+lLbbDv0embA2ibeYu2Uh7NrqYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\BusinesLogic\\BusinesLogic.csproj",
+  "projectFilePath": "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tural\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

@@ -93,7 +93,7 @@ namespace BusinesLogic.Services
 
         public void Update(int id, AudioLanguageVM item)
         {
-            var subtitle = mapperIdVmToM.Map<AudioLanguage>(item);
+            var subtitle = mapperVmToM.Map<AudioLanguage>(item);
             subtitle.Id = id;
             _db.Update(subtitle);
         }

@@ -65,5 +65,10 @@ namespace NetflixMVC.Controllers
             _userFeedback.Create(userFeedBackVM);
             return RedirectToAction(nameof(Index), "Home");
         }
+
+        public IActionResult Error()
+        {
+            return View();
+        }
     }
 }

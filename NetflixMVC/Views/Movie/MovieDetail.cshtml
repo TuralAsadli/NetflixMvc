@@ -17,32 +17,38 @@
                                 <div class="gen-season-holder">
                                     <ul class="nav">
                                         <li class="nav-item">
-                                            <a class="nav-link active show" data-toggle="tab" href="#season_0">Season 1</a>
+                                            <a class="nav-link active show" data-toggle="tab" href="#season_0">Trailer</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#season_1">Season 2</a>
-                                        </li>
+                                        @if (Model.Movie.MovieVideoName != null)
+                                        {
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#season_1">Movie</a>
+                                            </li>
+                                        }
                                     </ul>
                                     <div class="tab-content">
                                         <div id="season_0" class="tab-pane active">
                                             <iframe width="100%" height="100%" src="~/videos/trailers/@Model.Movie.MovieTrailerName"
                                                     frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowfullscreen>
                                             </iframe>
                                         </div>
-                                        <div id="season_1" class="tab-pane">
-                                            <iframe width="100%" height="550px" src="~/videos/movies/@Model.Movie.MovieVideoName"
-                                                    frameborder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                    allowfullscreen>
-                                            </iframe>
-                                        </div>
+                                        @if (Model.Movie.MovieVideoName != null)
+                                        {
+                                            <div id="season_1" class="tab-pane">
+                                                <iframe width="100%" height="550px" src="~/videos/movies/@Model.Movie.MovieVideoName"
+                                                        frameborder="0"
+                                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        }
                                     </div>
                                 </div>
                                 <script>
-                                    var tab; // заголовок вкладки
-                                    var tabContent; // блок содержащий контент вкладки
+                                    var tab;
+                                    var tabContent; 
 
 
                                     window.onload = function () {

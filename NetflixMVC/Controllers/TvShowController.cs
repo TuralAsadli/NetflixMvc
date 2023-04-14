@@ -44,7 +44,7 @@ namespace NetflixMVC.Controllers
 
         public IActionResult SeasonDetail(int id,int seasonId, int seriaId)
         {
-            if (User.Identity.IsAuthenticated != null)
+            if (User.Identity.IsAuthenticated != false)
             {
                 var users = _users.GetWithInclude("WachedTvShows");
 

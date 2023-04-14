@@ -31,7 +31,7 @@ namespace NetflixMVC.Controllers
             
             if (user == null) return NotFound();
 
-            var trustetUser = _users.GetWithInclude("Movies").FirstOrDefault(n => n.UserName == user.UserName);
+            var trustetUser = _users.GetWithInclude("Movies", "Movies.MovieCategories.Category").FirstOrDefault(n => n.UserName == user.UserName);
 
             return View(user);
         }

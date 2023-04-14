@@ -34,7 +34,7 @@ namespace NetflixMVC.Controllers
             return View(user);
         }
 
-        public async Task<IActionResult> AddTvsows(int id)
+        public async Task<IActionResult> AddTvshows(int id)
         {
             var res = (TvShow)_tvshow.GetWithInclude(id);
 

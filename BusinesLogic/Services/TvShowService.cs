@@ -74,8 +74,8 @@ namespace BusinesLogic.Services
 
         public IEnumerable<object> Search(string query)
         {
-            
-            return _db.GetWithInclude().Where(item => item.TvShowName.Contains(query)).ToList();
+            List<TvShow> res = (List<TvShow>)GetAllWithInclude();
+            return res.Where(item => item.TvShowName.Contains(query)).ToList();
         }
         public void Create(TvShowVM item)
         {
@@ -202,7 +202,7 @@ namespace BusinesLogic.Services
 
         public void Remove(int id)
         {
-            var res = _db.GetWithIdInclude(id, "Languages", "Subtitle", "AudioLanguages", "Categories", "Actors", "Seasons");
+            var res = _db.GetWithIdInclude(id, "Languages", "Subtitle", "AudioLanguages", "Categories", "Actors", "Seasons.Series");
             if (res == null)
             {
                 return;

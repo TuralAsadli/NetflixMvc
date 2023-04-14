@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\Interfaces\\Interfaces.csproj": {}
+    "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\Interfaces\\Interfaces.csproj": {
+    "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\Interfaces\\Interfaces.csproj",
+        "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj",
         "packagesPath": "C:\\Users\\Tural\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tural\\AppData\\Roaming\\NuGet\\NuGet.Config",

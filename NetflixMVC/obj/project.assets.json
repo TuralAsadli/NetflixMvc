@@ -2141,7 +2141,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/13.0.2": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -7960,10 +7960,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.2": {
-      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.2",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7985,7 +7985,7 @@
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -14396,6 +14396,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
       "Microsoft.Extensions.Caching.Redis >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
+      "Newtonsoft.Json >= 13.0.3",
       "StackExchange.Redis >= 2.6.96",
       "Stripe.net >= 41.7.0"
     ]
@@ -14406,11 +14407,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\NetflixMVC\\NetflixMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj",
       "projectName": "NetflixMVC",
-      "projectPath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\NetflixMVC\\NetflixMVC.csproj",
+      "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj",
       "packagesPath": "C:\\Users\\Tural\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\NetflixMVC\\obj\\",
+      "outputPath": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tural\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -14427,14 +14428,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\BusinesLogic\\BusinesLogic.csproj": {
-              "projectPath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\BusinesLogic\\BusinesLogic.csproj"
+            "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj": {
+              "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj"
             },
-            "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\DAL\\DAL.csproj"
+            "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\Interfaces\\Interfaces.csproj": {
-              "projectPath": "C:\\Users\\Tural\\source\\repos\\NetflixMVC\\Interfaces\\Interfaces.csproj"
+            "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj"
             }
           }
         }
@@ -14474,6 +14475,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.11, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "StackExchange.Redis": {
             "target": "Package",

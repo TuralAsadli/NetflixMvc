@@ -55,7 +55,7 @@ namespace BusinesLogic.Services
         public LanguageVM FindById(int id)
         {
             var res = _db.FindById(id);
-            var languageVM = mapperIdMtoVM.Map<LanguageVM>(res);
+            var languageVM = mapperIdMtoVM.Map<LanguageWithId>(res);
             return languageVM;
         }
 

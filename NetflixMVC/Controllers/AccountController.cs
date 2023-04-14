@@ -1,14 +1,17 @@
-﻿using BusinesLogic.ViewModel.Subscribe;
+﻿using Alachisoft.NCache.Config.Dom;
+using BusinesLogic.ViewModel.Subscribe;
 using DAL.DAL;
 using DAL.Entities.User;
 using Interfaces.Repository.BaseRepository;
 using Interfaces.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using NetflixMVC.ViewModel;
 using Stripe;
+using User = DAL.Entities.User.User;
 
 namespace NetflixMVC.Controllers
 {
@@ -21,7 +24,9 @@ namespace NetflixMVC.Controllers
         AppDbContext _context;
         IMemoryCache _cache;
         IConfiguration _configuration;
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<IdentityRole> roles, ISubscribeService<BusinesLogic.ViewModel.Subscribe.SubscribeVM> sub, IMemoryCache cache, IConfiguration configuration, AppDbContext context)
+        IBaseRepository<User> _users;
+
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<IdentityRole> roles, ISubscribeService<BusinesLogic.ViewModel.Subscribe.SubscribeVM> sub, IMemoryCache cache, IConfiguration configuration, AppDbContext context, IBaseRepository<User> users)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -29,8 +34,9 @@ namespace NetflixMVC.Controllers
             _sub = sub;
             _cache = cache;
             _configuration = configuration;
-            
+
             _context = context;
+            _users = users;
         }
 
         public IActionResult Index()
@@ -170,13 +176,17 @@ namespace NetflixMVC.Controllers
         [HttpPost]
         public async Task<IActionResult> BuySubscribe(BuySubscribeVM subscribeVM)
         {
+            if (!User.Identity.IsAuthenticated || User.Identity == null)
+            {
+                return RedirectToAction(nameof(Login));
+            }
             if (!ModelState.IsValid)
             {
                 ViewBag.Subs = _sub.GetWithId();
                 return View(subscribeVM);
             }
             var subs = (List<SubscribeWithIdVM>)_sub.GetWithId();
-            StripeConfiguration.ApiKey = _configuration.GetSection("Stripe:SecretKey").Value;
+            StripeConfiguration.ApiKey = _configuration["Stripe:ApiKey"] /*_configuration.GetSection("Stripe").Value*/;
 
             var chargeService = new ChargeService();
             var options = new ChargeCreateOptions
@@ -190,6 +200,9 @@ namespace NetflixMVC.Controllers
 
             if (charge.Status == "succeeded")
             {
+                var user = await _userManager.GetUserAsync(User);
+                user.SubscribeId = subscribeVM.SubId;
+                _users.Update(user);
                 string res = charge.BalanceTransactionId;
                 return RedirectToAction("Index", "Home");
             }
@@ -212,5 +225,23 @@ namespace NetflixMVC.Controllers
         //    return View();
         //}
 
+        public async Task<IActionResult> CreateAdmin()
+        {
+            User user = new User()
+            {
+                FirstName = "admin",
+                UserName = "admin",
+                LastName = "admin",
+                Email = "admin",
+            };
+
+            var res = _userManager.CreateAsync(user, "admin12345");
+            if (res.IsCompletedSuccessfully)
+            {
+                _userManager.AddToRoleAsync(user, "Admin");
+            }
+
+            return RedirectToAction(nameof(Index), "Home");
+        }
     }
 }

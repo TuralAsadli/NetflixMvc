@@ -46,17 +46,9 @@
                                             <i class="fa fa-chevron-down gen-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item active">
-                                                    <a href="index.html" aria-current="page">Main Home</a>
+                                                    <a asp-action="Index" asp-controller="Home" aria-current="page">Main Home</a>
                                                 </li>
-                                                <li class="menu-item">
-                                                    <a href="movies-home.html" aria-current="page">Movies Home</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="tv-shows-home.html" aria-current="page">Tv Shows Home</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="video-home.html" aria-current="page">Video Home</a>
-                                                </li>
+                                                
                                             </ul>
                                         </li>
                                         <li class="menu-item">
@@ -73,24 +65,6 @@
                                                         
                                                     </ul>
                                                 </li>
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">Movies Style</a>
-                                                    <i class="fa fa-chevron-down gen-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="movies-style-1.html">Style 1</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="movies-style-2.html">Style 2</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="movies-style-3.html">Style 3</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="single-movie.html">Single Movie</a>
-                                                </li>
                                             </ul>
                                         </li>
                                         <li class="menu-item">
@@ -106,27 +80,6 @@
                                                         </li>
                                                         
                                                     </ul>
-                                                </li>
-                                                <li class="menu-item menu-item-has-children">
-                                                    <a href="#">Tv Shows Style</a>
-                                                    <i class="fa fa-chevron-down gen-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="tv-shows-style-1.html">Style 1</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="tv-shows-style-2.html">Style 2</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="tv-shows-style-3.html">Style 3</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="single-tv-shows.html">Single Tv Shows</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="single-episode.html">Single Episode</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -186,47 +139,47 @@
                                             }
                                             
                                             <!-- Library Menu -->
-                                            <li>
-                                                <a asp-action="BuySubscribe" asp-controller="Account">
-                                                    <i class="fa fa-indent"></i>
-                                                    Buy Subscribe
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a asp-action="Index" asp-controller="MoviePlaylist">
-                                                    <i class="fa fa-list"></i>
-                                                    Movie Playlist
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="library.html">
-                                                    <i class="fa fa-list"></i>
-                                                    Tv Show Playlist
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="library.html">
-                                                    <i class="fa fa-list"></i>
-                                                    Video Playlist
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="upload-video.html">
-                                                    <i class="fa fa-upload"></i>
-                                                    Upload Video
-                                                </a>
-                                            </li>
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                <li>
+                                                    <a asp-action="BuySubscribe" asp-controller="Account">
+                                                        <i class="fa fa-indent"></i>
+                                                        Buy Subscribe
+                                                    </a>
+                                                </li>
+                                            }
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                <li>
+                                                    <a asp-action="Index" asp-controller="MoviePlaylist">
+                                                        <i class="fa fa-list"></i>
+                                                        Movie Playlist
+                                                    </a>
+                                                </li>
+                                            }
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                <li>
+                                                    <a asp-action="Index" asp-controller="TvshowPlaylist">
+                                                        <i class="fa fa-list"></i>
+                                                        Tv Show Playlist
+                                                    </a>
+                                                </li>
+                                            }
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="gen-btn-container">
-                                    <a asp-action="BuySubscribe" asp-controller="Account" class="gen-button">
-                                        <div class="gen-button-block">
-                                            <span class="gen-button-line-left"></span>
-                                            <span class="gen-button-text">Subscribe</span>
-                                        </div>
-                                    </a>
-                                </div>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <div class="gen-btn-container">
+                                        <a asp-action="BuySubscribe" asp-controller="Account" class="gen-button">
+                                            <div class="gen-button-block">
+                                                <span class="gen-button-line-left"></span>
+                                                <span class="gen-button-text">Subscribe</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                }
                             </div>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
