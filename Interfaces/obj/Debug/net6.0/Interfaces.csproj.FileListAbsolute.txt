@@ -10,3 +10,15 @@ C:\Users\Tural\source\repos\NetflixMVC\Interfaces\obj\Debug\net6.0\Interfaces.dl
 C:\Users\Tural\source\repos\NetflixMVC\Interfaces\obj\Debug\net6.0\refint\Interfaces.dll
 C:\Users\Tural\source\repos\NetflixMVC\Interfaces\obj\Debug\net6.0\Interfaces.pdb
 C:\Users\Tural\source\repos\NetflixMVC\Interfaces\obj\Debug\net6.0\ref\Interfaces.dll
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\bin\Debug\net6.0\Interfaces.deps.json
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\bin\Debug\net6.0\Interfaces.dll
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\bin\Debug\net6.0\Interfaces.pdb
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\Interfaces.csproj.AssemblyReference.cache
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\Interfaces.AssemblyInfoInputs.cache
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\Interfaces.AssemblyInfo.cs
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\Interfaces.dll
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\refint\Interfaces.dll
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\Interfaces.pdb
+C:\Users\Tural\Desktop\Copied2\NetflixMvc\Interfaces\obj\Debug\net6.0\ref\Interfaces.dll

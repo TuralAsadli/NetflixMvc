@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iLUeqNEwbyYeFGuqTkLoW71y/bRz8s9jCPdCeyve+B1ggrLH4Sl5Z7PGukbLg8cc3+jZIOZ8+SikAsRMWd121A==",
+  "dgSpecHash": "JsprLvxrQuZ3DIQFrJZXmdAmjbv7glN6sKNO9fiYWiHENXAEiWUMQUkEM8cTBYIXtXVFxF+etM9VgwJnzBzFJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj",
+  "projectFilePath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\NetflixMVC\\NetflixMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tural\\.nuget\\packages\\alachisoft.ncache.opensource.sdk\\5.0.5\\alachisoft.ncache.opensource.sdk.5.0.5.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wncztisbSOmHtFK/YZNZwnMB/eLPQ+ini1fH3UdtlDlPCe0ZGyNCd4HR4c5dIaEubE3EplOWO4bisueWt1ycCA==",
+  "dgSpecHash": "ResSGNfflk1cYa//obnMwx0FoOUIQz+r2ISh4LR+JxLsbIRaK/wfIVzb3H0VVuOb7evQJrpoXkDnM/tdVIPb4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tural\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tural\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

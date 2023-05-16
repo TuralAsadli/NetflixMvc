@@ -77,6 +77,7 @@ namespace NetflixMVC.Controllers
                 LastName = UserVM.LastName,
                 Email = UserVM.Email,
                 SubscribeId = UserVM.SubscribeId,
+                
 
             };
 

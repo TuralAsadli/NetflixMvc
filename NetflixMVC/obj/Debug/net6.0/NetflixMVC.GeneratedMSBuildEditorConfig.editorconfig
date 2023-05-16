@@ -8,261 +8,261 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NetflixMVC
 build_property.RootNamespace = NetflixMVC
-build_property.ProjectDir = C:\Users\Tural\Desktop\copied\NetflixMVC\
+build_property.ProjectDir = C:\Users\Tural\Desktop\Copied2\NetflixMvc\NetflixMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Tural\Desktop\copied\NetflixMVC
+build_property.MSBuildProjectDirectory = C:\Users\Tural\Desktop\Copied2\NetflixMvc\NetflixMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Actor/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Actor/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFjdG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Actor/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Actor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFjdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Actor/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Actor/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFjdG9yXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Audio/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Audio/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEF1ZGlvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Audio/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Audio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEF1ZGlvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Audio/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Audio/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEF1ZGlvXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Category/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Category/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Category/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Category/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENhdGVnb3J5XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Home/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEhvbWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Home/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Home/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Home/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEhvbWVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Language/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Language/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXExhbmd1YWdlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Language/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Language/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXExhbmd1YWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Language/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Language/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXExhbmd1YWdlXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Movie/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Movie/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE1vdmllXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Movie/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Movie/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE1vdmllXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Movie/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Movie/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE1vdmllXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Season/AddSeason.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Season/AddSeason.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlYXNvblxBZGRTZWFzb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Season/ShowSeasons.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Season/ShowSeasons.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlYXNvblxTaG93U2Vhc29ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Seria/AddSeria.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Seria/AddSeria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlcmlhXEFkZFNlcmlhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Seria/ShowSeries.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Seria/ShowSeries.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlcmlhXFNob3dTZXJpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Settings/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Settings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Settings/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Settings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Settings/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Settings/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdzXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Shared/_Layout.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Subscribe/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Subscribe/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1YnNjcmliZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Subscribe/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Subscribe/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1YnNjcmliZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Subscribe/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Subscribe/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1YnNjcmliZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Subtitle/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Subtitle/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1YnRpdGxlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Subtitle/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Subtitle/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1YnRpdGxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/Subtitle/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/Subtitle/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFN1YnRpdGxlXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/TvShow/Create.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/TvShow/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFR2U2hvd1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/TvShow/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/TvShow/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFR2U2hvd1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/TvShow/Update.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/TvShow/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFR2U2hvd1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/UserFeedback/Detail.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/UserFeedback/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFVzZXJGZWVkYmFja1xEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/UserFeedback/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/UserFeedback/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFVzZXJGZWVkYmFja1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/_ViewImports.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Areas/Manage/Views/_ViewStart.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Areas/Manage/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Account/BuySubscribe.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Account/BuySubscribe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCdXlTdWJzY3JpYmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Account/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Account/Login.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Account/Register.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Category/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Home/Components/ContactUsViewComponent/ContactUs.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Home/Components/ContactUsViewComponent/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXENvbnRhY3RVc1ZpZXdDb21wb25lbnRcQ29udGFjdFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Home/ContactUs.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Home/Error.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Home/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Home/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Home/Privacy.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Home/Search.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Home/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/MoviePlaylist/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/MoviePlaylist/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVQbGF5bGlzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Movie/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Movie/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Movie/MovieDetail.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Movie/MovieDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcTW92aWVEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Shared/Error.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Shared/_AccountLayout.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Shared/_AccountLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/TvshowPlaylist/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/TvshowPlaylist/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZzaG93UGxheWxpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/TvShow/Index.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/TvShow/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZTaG93XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/TvShow/SeasonDetail.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/TvShow/SeasonDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZTaG93XFNlYXNvbkRldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/TvShow/TvShowDetail.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/TvShow/TvShowDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZTaG93XFR2U2hvd0RldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/_ViewImports.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/_ViewStart.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tural/Desktop/copied/NetflixMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Tural/Desktop/Copied2/NetflixMvc/NetflixMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wq89iv92f6

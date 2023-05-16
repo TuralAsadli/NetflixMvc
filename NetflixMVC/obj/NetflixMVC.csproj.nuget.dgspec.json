@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj": {}
+    "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\NetflixMVC\\NetflixMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj": {
+    "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\BusinesLogic\\BusinesLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\BusinesLogic\\BusinesLogic.csproj",
         "projectName": "BusinesLogic",
-        "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj",
+        "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\BusinesLogic\\BusinesLogic.csproj",
         "packagesPath": "C:\\Users\\Tural\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\obj\\",
+        "outputPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\BusinesLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tural\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj"
+              "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj": {
+    "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Tural\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tural\\Desktop\\copied\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tural\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,8 +115,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -174,14 +174,14 @@
         }
       }
     },
-    "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj": {
+    "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj",
+        "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj",
         "packagesPath": "C:\\Users\\Tural\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tural\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -229,14 +229,14 @@
         }
       }
     },
-    "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj": {
+    "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\NetflixMVC\\NetflixMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\NetflixMVC\\NetflixMVC.csproj",
         "projectName": "NetflixMVC",
-        "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\NetflixMVC.csproj",
+        "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\NetflixMVC\\NetflixMVC.csproj",
         "packagesPath": "C:\\Users\\Tural\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tural\\Desktop\\copied\\NetflixMVC\\obj\\",
+        "outputPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\NetflixMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tural\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -253,14 +253,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj": {
-                "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\BusinesLogic\\BusinesLogic.csproj"
+              "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\BusinesLogic\\BusinesLogic.csproj": {
+                "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\BusinesLogic\\BusinesLogic.csproj"
               },
-              "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\DAL\\DAL.csproj"
+              "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Tural\\Desktop\\copied\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Tural\\Desktop\\Copied2\\NetflixMvc\\Interfaces\\Interfaces.csproj"
               }
             }
           }
