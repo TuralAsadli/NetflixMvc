@@ -57,18 +57,20 @@ StreamLab follows a client-server architecture, with the following components:
 
 2. N-Tier:
     #### Application consists of 4 layers
-   1. Interfaces (Class library, entities's interfaces);
-   2. DAL (Class library and Context);
-   3. BL (Class library, Business logic, references the two projects above 1 and 2);
-   4. Web (ASP.NET MVC application, Presentation Layer, references two projects 1 and 3);
-
-
+   1. **Interfaces** (Class library, entities's interfaces);
+   2. **DAL** (Class library and Context);
+   3. **BL** (Class library, Business logic, references the two projects above 1 and 2);
+   4. **Web** (ASP.NET MVC application, Presentation Layer, references two projects 1 and 3);
 
 3. Database:
    - Stores movie and TV show data, user information, and user preferences.
    - Can be implemented using relational databases like MsSql, MySQL or PostgreSQL.
    - Ensures data consistency, integrity, and scalability.
 
+4. Generic Repository:
+    - **CRUD Operations**: The generic repository supports Create, Read, Update, and Delete operations for entities.
+    - **Flexible Entity Types**: You can use the generic repository with various entity types by providing the appropriate type parameter.
+    - **Data Source Agnostic**: The repository is designed to work with different data sources, such as databases, file systems, or external APIs.
 
 ## Contributing:
 Contributions to Webflix are welcome! If you'd like to contribute, please follow these steps:
