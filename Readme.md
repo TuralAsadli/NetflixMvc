@@ -68,10 +68,10 @@ StreamLab follows a client-server architecture, with the following components:
    - Ensures data consistency, integrity, and scalability.
    <div class="row" style="display: flex;">
     <div style="margin: 20px;">
-        <img src="userDbDisign.png" alt="Image Description" width="500px" height="300px" />
+        <img src="userDbDisign.png" alt="Image Description" width="300px" height="180px" />
     </div>
     <div style="margin: 20px;">
-        <img src="MovieDbDesign.png" alt="Image Description" width="500px" height="300px" />
+        <img src="MovieDbDesign.png" alt="Image Description" width="300px" height="180px" />
     </div>
    </div>
 
