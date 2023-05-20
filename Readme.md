@@ -66,6 +66,14 @@ StreamLab follows a client-server architecture, with the following components:
    - Stores movie and TV show data, user information, and user preferences.
    - Can be implemented using relational databases like MsSql, MySQL or PostgreSQL.
    - Ensures data consistency, integrity, and scalability.
+   <div class="row" style="display: flex;">
+    <div style="margin: 20px;">
+        <img src="userDbDisign.png" alt="Image Description" width="500px" height="300px" />
+    </div>
+    <div style="margin: 20px;">
+        <img src="MovieDbDesign.png" alt="Image Description" width="500px" height="300px" />
+    </div>
+   </div>
 
 4. Generic Repository:
     - **CRUD Operations**: The generic repository supports Create, Read, Update, and Delete operations for entities.
